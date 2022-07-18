@@ -1,6 +1,6 @@
 import React, { useState,useReducer } from "react";
 import "./../styles/App.css";
-
+import { StateDetails } from "./State";
 
 const states = [{
 	name : "Madhya Pradesh",
@@ -143,6 +143,18 @@ function App()
 	// Do not alter/remove main div
 	return (
 	<div id="main">
+		<div>
+        {states.map((stateName, stateId) => {
+          return (
+            <StateDetails
+              stateVar={stateName}
+              stateName={stateName.name}
+              stateId={stateId}
+              key={stateId}
+            />
+          );
+        })}
+      </div>
 		
 	</div>
 	);
