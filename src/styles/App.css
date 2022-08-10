@@ -11,6 +11,40 @@ button{
     align-items: center;
 }
 
+select {
+    width: 10rem;
+}
+
 .bg-pink{
 	background-color:pink;
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.control__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.card {
+    border: 1px solid gainsboro;
+    padding: 1rem;
 }
